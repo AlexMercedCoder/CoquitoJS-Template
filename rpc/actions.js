@@ -1,6 +1,6 @@
 const actions = {
     getList: (payload, context) => {
-        console.log(context)
+        console.log(context.req.method)
         return [1,2,3,4,5]
     },
 

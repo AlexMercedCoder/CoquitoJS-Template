@@ -2,7 +2,7 @@
   "name": "template",
   "version": "1.0.0",
   "description": "Template for a CoquitoJS Application",
-  "main": "cors.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "start": "node server.js",
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/AlexMercedCoder/CoquitoJS-Template#readme",
   "dependencies": {
-    "coquito": "^0.0.12",
+    "coquito": "^0.0.17",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
