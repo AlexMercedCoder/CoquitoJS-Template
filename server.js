@@ -7,8 +7,8 @@ import actions from "./rpc/actions.js";
 import context from "./rpc/context.js";
 import rootValue from "./graphql/rootValue.js";
 import schema from "./graphql/schema.js";
-import router1 from "./controllers/router1.js";
-import router2 from "./controllers/router2.js";
+import router1Controller from "./controllers/router1.js";
+import router2Controller from "./controllers/router2.js";
 
 // load .env variables
 dotenv.config();
@@ -47,10 +47,14 @@ app.app.get("/", (req, res) => {
   res.render("index");
 });
 
+// deconstruct routers
+const {router1, router2} = app.r
+
+
 // register router1 routes
-router1(app.router1);
+router1Controller(router1);
 //register router2 routes
-router2(app.router2);
+router2Controller(router2);
 
 // Start Server Listener
 app.listen();
