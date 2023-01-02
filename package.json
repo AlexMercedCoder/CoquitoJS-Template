@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/AlexMercedCoder/CoquitoJS-Template#readme",
   "dependencies": {
-    "coquito": "^0.0.30",
+    "coquito": "^0.0.31",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
